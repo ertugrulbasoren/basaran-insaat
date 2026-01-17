@@ -146,7 +146,7 @@ export default function ContactPage() {
               Şubemiz
             </h2>
             <p className="text-light-400 max-w-2xl mx-auto">
-              Zeytinburnu'ndaki şubemizi ziyaret edebilirsiniz.
+              Zeytinburnu&apos;ndaki şubemizi ziyaret edebilirsiniz.
             </p>
           </div>
 

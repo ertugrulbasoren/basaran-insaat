@@ -86,7 +86,7 @@ export default function HeroSection() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold mb-6 text-light-50"
           >
-            İstanbul'un{' '}
+            İstanbul&apos;un{' '}
             <span className="text-gradient">Güvenilir</span>
             <br />
             İnşaat Ortağı

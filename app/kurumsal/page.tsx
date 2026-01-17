@@ -41,7 +41,7 @@ export default function CorporatePage() {
             </h2>
             <div className="space-y-4 text-light-300 leading-relaxed">
               <p>
-                Başaran İnşaat & Emlak, 2009 yılından beri İstanbul'da faaliyet gösteren, sektöründe
+                Başaran İnşaat & Emlak, 2009 yılından beri İstanbul&apos;da faaliyet gösteren, sektöründe
                 öncü bir inşaat ve emlak firmasıdır. 15+ yıllık deneyimimiz ile kaliteli projeler
                 üretmekte ve müşteri memnuniyetini en üst seviyede tutmaktayız.
               </p>
@@ -70,7 +70,7 @@ export default function CorporatePage() {
               </div>
               <h2 className="text-2xl md:text-3xl font-heading font-bold mb-4">Vizyonumuz</h2>
               <p className="text-light-300 leading-relaxed">
-                İstanbul'un en güvenilir ve saygın inşaat firması olmak. Sektörde yenilikçi
+                İstanbul&apos;un en güvenilir ve saygın inşaat firması olmak. Sektörde yenilikçi
                 yaklaşımımız ve kaliteli hizmetlerimiz ile öncü konumumuzu sürdürmek, müşterilerimizin
                 güvenini kazanmak ve onların hayallerini gerçekleştirmelerine katkıda bulunmak.
               </p>

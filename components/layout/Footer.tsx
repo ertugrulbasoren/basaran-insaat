@@ -15,7 +15,7 @@ export default function Footer() {
               <Logo showText={true} />
             </Link>
             <p className="text-light-400 text-sm mt-4">
-              İstanbul'un güvenilir inşaat ortağı. Kaliteli projeler, güvenilir hizmet.
+              İstanbul&apos;un güvenilir inşaat ortağı. Kaliteli projeler, güvenilir hizmet.
             </p>
           </div>
 
