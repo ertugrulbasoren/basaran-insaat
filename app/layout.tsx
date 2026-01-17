@@ -4,6 +4,7 @@ import './globals.css'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
 import WhatsAppFloat from '@/components/ui/WhatsAppFloat'
+import StructuredData from '@/components/seo/StructuredData'
 
 const inter = Inter({ 
   subsets: ['latin'],
@@ -34,17 +35,25 @@ export const metadata: Metadata = {
   authors: [{ name: 'Başaran İnşaat & Emlak' }],
   creator: 'Başaran İnşaat & Emlak',
   publisher: 'Başaran İnşaat & Emlak',
-  metadataBase: new URL('https://basaraninsaat.com'),
+  metadataBase: new URL('https://basaraninsaat.net.tr'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
     locale: 'tr_TR',
-    url: 'https://basaraninsaat.com',
+    url: 'https://basaraninsaat.net.tr',
     siteName: 'Başaran İnşaat & Emlak',
     title: 'Başaran İnşaat & Emlak | İstanbul\'un Güvenilir İnşaat Ortağı',
     description: 'Kentsel dönüşüm, konut projeleri ve müteahhitlik hizmetleri. İstanbul\'da güvenilir ve kaliteli inşaat çözümleri.',
+    images: [
+      {
+        url: 'https://basaraninsaat.net.tr/images/logo.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Başaran İnşaat & Emlak',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
@@ -72,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="tr" className="dark">
       <body className={`${inter.variable} ${montserrat.variable} ${playfair.variable} font-body antialiased bg-dark-500 text-light-200`}>
+        <StructuredData />
         <Header />
         <main className="min-h-screen">
           {children}

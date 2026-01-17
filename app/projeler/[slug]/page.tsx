@@ -7,6 +7,7 @@ import { projects } from '@/lib/content'
 import ProjectGallery from '@/components/projects/ProjectGallery'
 import ProjectFeatures from '@/components/projects/ProjectFeatures'
 import ContactForm from '@/components/forms/ContactForm'
+import ProjectStructuredData from '@/components/seo/ProjectStructuredData'
 import { siteConfig } from '@/lib/constants'
 import { formatPhoneNumber, formatWhatsAppNumber } from '@/lib/utils'
 
@@ -53,7 +54,9 @@ export default function ProjectDetailPage({ params }: Props) {
   const whatsappUrl = `https://wa.me/${whatsappNumber}?text=Merhaba, ${project.title} projesi hakkında bilgi almak istiyorum.`
 
   return (
-    <div className="min-h-screen pt-20">
+    <>
+      <ProjectStructuredData project={project} />
+      <div className="min-h-screen pt-20">
       {/* Back Button */}
       <div className="container-custom pt-8">
         <Link
@@ -118,6 +121,9 @@ export default function ProjectDetailPage({ params }: Props) {
                 {project.content && (
                   <div className="mt-6 text-light-300 leading-relaxed">{project.content}</div>
                 )}
+                <p className="mt-6 text-light-400 text-sm italic leading-relaxed">
+                  * Görseller temsilidir, değişiklik gösterebilir.
+                </p>
               </div>
 
               {/* Features */}
@@ -248,5 +254,6 @@ export default function ProjectDetailPage({ params }: Props) {
         </div>
       </section>
     </div>
+    </>
   )
 }
