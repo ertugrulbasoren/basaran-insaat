@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-heading: 'Playfair Display', serif;
+    --font-subheading: 'Montserrat', sans-serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-500 text-light-200;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold text-light-50;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl font-bold text-light-50;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl font-semibold text-light-100;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl font-semibold text-light-100;
+  }
+
+  p {
+    @apply text-base md:text-lg text-light-300 leading-relaxed;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-20 lg:py-24;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg font-medium transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-dark-500;
+  }
+
+  .btn-primary {
+    @apply btn bg-primary-500 text-dark-500 hover:bg-primary-600 hover:shadow-lg hover:shadow-primary-500/50 focus:ring-primary-500;
+  }
+
+  .btn-secondary {
+    @apply btn bg-transparent border-2 border-primary-500 text-primary-500 hover:bg-primary-500 hover:text-dark-500 focus:ring-primary-500;
+  }
+
+  .btn-outline {
+    @apply btn bg-transparent border-2 border-light-400 text-light-200 hover:bg-light-400 hover:text-dark-500 focus:ring-light-400;
+  }
+
+  .card {
+    @apply bg-dark-100 rounded-xl p-6 border border-dark-200 transition-all duration-300;
+  }
+
+  .card-hover {
+    @apply card hover:border-primary-500/50 hover:shadow-lg hover:shadow-primary-500/20 hover:-translate-y-1;
+  }
+
+  .gold-glow {
+    @apply shadow-lg shadow-primary-500/50;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary-400 to-primary-600 bg-clip-text text-transparent;
+  }
+
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+}
