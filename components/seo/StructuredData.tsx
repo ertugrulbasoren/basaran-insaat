@@ -63,6 +63,12 @@ export default function StructuredData() {
     publisher: {
       '@id': 'https://basaraninsaat.net.tr/#organization',
     },
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://basaraninsaat.net.tr/images/logo.jpg',
+      width: 1211,
+      height: 1103,
+    },
     potentialAction: {
       '@type': 'SearchAction',
       target: {
