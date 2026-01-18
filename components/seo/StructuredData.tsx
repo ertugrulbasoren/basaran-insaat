@@ -48,9 +48,7 @@ export default function StructuredData() {
       '@type': 'City',
       name: 'İstanbul',
     },
-    sameAs: [
-      // Sosyal medya hesaplarınızı buraya ekleyebilirsiniz
-    ],
+    sameAs: [],
   }
 
   const websiteSchema = {
