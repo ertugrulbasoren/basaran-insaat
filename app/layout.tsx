@@ -76,15 +76,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [
-      { url: '/images/logo.jpg', sizes: '32x32', type: 'image/jpeg' },
-      { url: '/images/logo.jpg', sizes: '192x192', type: 'image/jpeg' },
-      { url: '/images/logo.jpg', sizes: '512x512', type: 'image/jpeg' },
-    ],
-    apple: [
-      { url: '/images/logo.jpg', sizes: '180x180', type: 'image/jpeg' },
-    ],
-    shortcut: '/images/logo.jpg',
+    icon: '/images/logo.jpg',
+    apple: '/images/logo.jpg',
   },
   manifest: '/manifest.json',
 }
