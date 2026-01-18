@@ -8,7 +8,12 @@ export default function StructuredData() {
     name: siteConfig.name,
     description: siteConfig.description,
     url: 'https://basaraninsaat.net.tr',
-    logo: 'https://basaraninsaat.net.tr/images/logo.jpg',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://basaraninsaat.net.tr/images/logo.jpg',
+      width: 1211,
+      height: 1103,
+    },
     image: 'https://basaraninsaat.net.tr/images/logo.jpg',
     telephone: siteConfig.links.phone,
     email: siteConfig.links.email,
