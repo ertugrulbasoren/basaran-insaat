@@ -59,6 +59,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Başaran İnşaat & Emlak',
     description: 'İstanbul\'un güvenilir inşaat ortağı',
+    images: ['https://basaraninsaat.net.tr/images/logo.jpg'],
+  },
+  other: {
+    'google-site-verification': '', // Google Search Console verification code buraya gelecek
   },
   robots: {
     index: true,
@@ -71,6 +75,18 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  icons: {
+    icon: [
+      { url: '/images/logo.jpg', sizes: '32x32', type: 'image/jpeg' },
+      { url: '/images/logo.jpg', sizes: '192x192', type: 'image/jpeg' },
+      { url: '/images/logo.jpg', sizes: '512x512', type: 'image/jpeg' },
+    ],
+    apple: [
+      { url: '/images/logo.jpg', sizes: '180x180', type: 'image/jpeg' },
+    ],
+    shortcut: '/images/logo.jpg',
+  },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({

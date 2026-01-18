@@ -1,0 +1,21 @@
+{
+  "name": "Başaran İnşaat & Emlak",
+  "short_name": "Başaran İnşaat",
+  "description": "İstanbul'un güvenilir inşaat ortağı",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#d4af37",
+  "icons": [
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/images/logo.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
